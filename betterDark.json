@@ -1,0 +1,65 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#000000",
+    // Activity Bar (The far left icons bar)
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#ff0c0c",
+    "activityBar.inactiveForeground": "#000000",
+    "activityBar.border": "#0cf4ff33",
+
+    // Side Bar (The Explorer/Folders area)
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#d4d4d4",
+    "sideBar.border": "#0cf4ff33",
+
+    // Status Bar (The very bottom bar)
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#ff0c0c",
+    "statusBar.border": "#ff0c0c33",
+
+    // Title Bar (The very top bar)
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#ff0c0c",
+
+    "editorGroupHeader.tabsBackground": "#000000",
+    "tab.activeBackground": "#000000",
+    "tab.inactiveBackground": "#170303a7",
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Functions like print and input",
+        "scope": [
+          "support.function",
+          "entity.name.function",
+          "meta.function-call.generic.python"
+        ],
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#ff3e3e",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "string.quoted.double.python, string.quoted.single.python",
+        "settings": {
+          "foreground": "#00ff9d"
+        }
+      }
+    ]
+  },
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "window.newWindowProfile": "better-darkTheme",
+}
