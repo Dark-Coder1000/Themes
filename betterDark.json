@@ -53,11 +53,32 @@
         }
       },
       {
+        "name": "comments",
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line"
+        ],
+        "settings": {
+          "foreground": "#ff00e170"
+        }
+      },
+      {
+        "name": "All Variable types, Modules, and Properties",
         "scope": [
           "source.python",
+          "variable",
+          "variable.other",
           "variable.other.readwrite.python",
           "variable.other.assignment.python",
-          "meta.function-call.arguments.python"
+          "variable.other.object.python",
+          "meta.function-call.arguments.python",
+          "variable.parameter.function.python",
+          "variable.language.special.self.python",
+          "meta.indexed-name.python",
+          "variable.other.property.python",
+          "meta.item-access.python"
         ],
         "settings": {
           "foreground": "#ff3e3e",
