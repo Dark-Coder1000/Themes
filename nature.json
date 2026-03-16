@@ -1,5 +1,11 @@
 {
   "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#39FF14",
+    "editor.selectionBackground": "#39FF1433", // The '33' makes it transparent green
+    "editor.lineHighlightBackground": "#0cff1c11", // Subtle glow on the current line
+    "terminal.foreground": "#39FF14",
+    "terminal.background": "#000000",
+
     "editor.background": "#000000",
     // Activity Bar (The far left icons bar)
     "activityBar.background": "#070021",
@@ -35,17 +41,20 @@
     
     // The border around the whole palette
     "widget.border": "#39FF14",
-    "contrastBorder": "#0cff3433" // Optional: adds a thin outline
+    "contrastBorder": "#0cff3433", // Optional: adds a thin outline
+    "editorBracketHighlight.foreground1": "#FF0000",
+    "editorBracketHighlight.foreground2": "#FF0000",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF0000"
 
   },
-  "editor.tokenColorCustomizations": {
+    "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "name": "Functions like print and input",
+        "name": "Functions",
         "scope": [
           "support.function",
           "entity.name.function",
-          "meta.function-call.generic.python"
+          "meta.function-call" 
         ],
         "settings": {
           "foreground": "#00ff04",
@@ -53,11 +62,11 @@
         }
       },
       {
+        "name": "Variables and Arguments",
         "scope": [
-          "source.python",
-          "variable.other.readwrite.python",
-          "variable.other.assignment.python",
-          "meta.function-call.arguments.python"
+          "variable.other",
+          "variable.parameter",
+          "meta.function-call.arguments"
         ],
         "settings": {
           "foreground": "#128e43",
@@ -65,9 +74,72 @@
         }
       },
       {
-        "scope": "string.quoted.double.python, string.quoted.single.python",
+        "name": "Strings",
+        "scope": "string",
         "settings": {
-          "foreground": "#07fd8e"
+          "foreground": "#05ae62"
+        }
+      },
+      {
+        "name": "Comments",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#007317f1",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "others",
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#9a1498",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Python Conditionals",
+        "scope": [
+          "keyword.control.conditional.python",
+          "keyword.control.flow.python"
+        ],
+        "settings": {
+          "foreground": "#ff9100"
+        }
+      },
+      {
+        "name": "Punctuation and Operators",
+        "scope": [
+          "punctuation",
+          "punctuation.definition",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "punctuation.section",
+          "punctuation.bracket",
+          "keyword.operator",
+          "keyword.operator.assignment",
+          "keyword.operator.arithmetic",
+          "keyword.operator.comparison",
+          "keyword.operator.logical"
+        ],
+        "settings": {
+          "foreground": "#55ff00" // Pick a color that stands out against your black background
+        }
+      },
+      {
+        "name": "Numbers",
+        "scope": [
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#00ff26" 
         }
       }
     ]
