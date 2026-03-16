@@ -138,6 +138,39 @@
           "foreground": "#FFC42E",
           "fontStyle": "italic"
         }
+      },
+      {
+        "name": "Imports",
+        "scope": [
+          "keyword.control.import",
+          "keyword.control.from"  
+        ],
+        "settings": {
+          "foreground": "#FF0000", // Change to your preferred color
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "name": "Definitions",
+        "scope": [
+            "storage.type.function", // This targets 'def'
+            "storage.type.class"
+        ],
+        "settings": {
+            "foreground": "#00ff51",
+            "fontStyle": "bold"
+        }
+      },
+      {
+        "name": "Booleans",
+        "scope": [
+          "constant.language.boolean",
+          "constant.language.python" // Specific for True/False in Python
+        ],
+        "settings": {
+          "foreground": "#04ff00", // Matching your Mint Green data color
+          "fontStyle": "bold"
+        }
       }
     ]
   },
