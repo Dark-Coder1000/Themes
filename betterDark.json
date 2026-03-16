@@ -1,44 +1,54 @@
 {
   "workbench.colorCustomizations": {
     "editor.background": "#000000",
-    // Activity Bar (The far left icons bar)
+    "editorCursor.foreground": "#ff0c0c",
+    "editor.selectionBackground": "#ff0c0c44",
+    "editor.lineHighlightBackground": "#ff0c0c11",
+    "terminal.foreground": "#ff0c0c",
+    "terminal.background": "#000000",
+
+    // Activity Bar
     "activityBar.background": "#000000",
     "activityBar.foreground": "#ff0c0c",
-    "activityBar.inactiveForeground": "#000000",
-    "activityBar.border": "#0cf4ff33",
+    "activityBar.inactiveForeground": "#330000",
+    "activityBar.border": "#ff0c0c33",
 
-    // Side Bar (The Explorer/Folders area)
+    // Side Bar
     "sideBar.background": "#000000",
     "sideBar.foreground": "#e10505",
-    "sideBar.border": "#0cf4ff33",
+    "sideBar.border": "#ff0c0c33",
 
-    // Status Bar (The very bottom bar)
+    // Status Bar
     "statusBar.background": "#000000",
     "statusBar.foreground": "#ff0c0c",
     "statusBar.border": "#ff0c0c33",
 
-    // Title Bar (The very top bar)
+    // Title Bar
     "titleBar.activeBackground": "#000000",
     "titleBar.activeForeground": "#ff0c0c",
 
+    // Tabs
     "editorGroupHeader.tabsBackground": "#000000",
     "tab.activeBackground": "#000000",
     "tab.inactiveBackground": "#170303a7",
     
-        // The main box background and foreground
+    // Quick Input / Palette
     "quickInput.background": "#000000",
     "quickInput.foreground": "#ff0c0c",
+    "quickInputList.focusBackground": "#ff0c0c33",
+    "quickInputList.focusForeground": "#ff0c0c",
     
-    // The list items inside the palette
-    "quickInputList.focusBackground": "#ff0c0c33", // Glow when you highlight an item
-    "quickInputList.focusForeground": "#ff0c0c",   // Text color when highlighted
-    
-    // The border around the whole palette
+    // Borders
     "widget.border": "#ff0c0c",
-    "contrastBorder": "#ff0c0c33" // Optional: adds a thin outline
+    "contrastBorder": "#ff0c0c33",
 
+    // Brackets (Matching the Mint String and Deep Blue Logic)
+    "editorBracketHighlight.foreground1": "#00ff9d",
+    "editorBracketHighlight.foreground2": "#0047c1",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000"
   },
-    "editor.tokenColorCustomizations": {
+
+  "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "name": "Functions",
@@ -83,6 +93,41 @@
         }
       },
       {
+        "name": "Python Conditionals",
+        "scope": [
+          "keyword.control.conditional.python",
+          "keyword.control.flow.python"
+        ],
+        "settings": {
+          "foreground": "#0047c1",
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "name": "Punctuation and Operators",
+        "scope": [
+          "punctuation",
+          "punctuation.definition",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "punctuation.section",
+          "punctuation.bracket",
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#ff0c0c" 
+        }
+      },
+      {
+        "name": "Numbers",
+        "scope": [
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#00ff9d" 
+        }
+      },
+      {
         "name": "others",
         "scope": [
           "source.python",
@@ -91,22 +136,45 @@
           "meta.function-call.arguments.python"
         ],
         "settings": {
-          "foreground": "#ff2e2e",
+          "foreground": "#FFC42E",
           "fontStyle": "italic"
         }
       },
-      {
-        "name": "Python Conditionals",
+            {
+        "name": "Imports",
         "scope": [
-          "keyword.control.conditional.python",
-          "keyword.control.flow.python"
+          "keyword.control.import",
+          "keyword.control.from"  
         ],
         "settings": {
-          "foreground": "#0047c1"
+          "foreground": "#FF0000", // Change to your preferred color
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "name": "Definitions",
+        "scope": [
+            "storage.type.function", // This targets 'def'
+            "storage.type.class"
+        ],
+        "settings": {
+            "foreground": "#00ff51",
+            "fontStyle": "bold"
+        }
+      },
+      {
+        "name": "Booleans",
+        "scope": [
+          "constant.language.boolean",
+          "constant.language.python" // Specific for True/False in Python
+        ],
+        "settings": {
+          "foreground": "#e5ff00", // Matching your Mint Green data color
+          "fontStyle": "bold"
         }
       }
     ]
   },
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "right"
 }
