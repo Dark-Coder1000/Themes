@@ -1,44 +1,54 @@
 {
   "workbench.colorCustomizations": {
     "editor.background": "#070021",
-    // Activity Bar (The far left icons bar)
+    "editorCursor.foreground": "#0cffe3",
+    "editor.selectionBackground": "#0cffe333",
+    "editor.lineHighlightBackground": "#0cffe311",
+    "terminal.foreground": "#0cffe3",
+    "terminal.background": "#070021",
+
+    // Activity Bar
     "activityBar.background": "#070021",
     "activityBar.foreground": "#a20cff",
     "activityBar.inactiveForeground": "#070021",
     "activityBar.border": "#0cf4ff33",
 
-    // Side Bar (The Explorer/Folders area)
+    // Side Bar
     "sideBar.background": "#070021",
     "sideBar.foreground": "#05e1bc",
     "sideBar.border": "#0cf4ff33",
 
-    // Status Bar (The very bottom bar)
+    // Status Bar
     "statusBar.background": "#070021",
     "statusBar.foreground": "#0cffd2",
     "statusBar.border": "#0cffdb33",
 
-    // Title Bar (The very top bar)
+    // Title Bar
     "titleBar.activeBackground": "#070021",
     "titleBar.activeForeground": "#0cffef",
 
+    // Tabs
     "editorGroupHeader.tabsBackground": "#070021",
     "tab.activeBackground": "#070021",
     "tab.inactiveBackground": "#070021",
     
-        // The main box background and foreground
+    // Quick Input / Palette
     "quickInput.background": "#070021",
     "quickInput.foreground": "#0cffe3",
+    "quickInputList.focusBackground": "#0cffca33",
+    "quickInputList.focusForeground": "#0cffba",
     
-    // The list items inside the palette
-    "quickInputList.focusBackground": "#0cffca33", // Glow when you highlight an item
-    "quickInputList.focusForeground": "#0cffba",   // Text color when highlighted
-    
-    // The border around the whole palette
+    // Borders
     "widget.border": "#0cffbe",
-    "contrastBorder": "#0cffca33" // Optional: adds a thin outline
+    "contrastBorder": "#0cffca33",
 
+    // Brackets (Matching the Blue Function color)
+    "editorBracketHighlight.foreground1": "#006aff",
+    "editorBracketHighlight.foreground2": "#b23eff",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff2e2e"
   },
-    "editor.tokenColorCustomizations": {
+
+  "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "name": "Functions",
@@ -68,7 +78,7 @@
         "name": "Strings",
         "scope": "string",
         "settings": {
-          "foreground": "#7107fd"
+          "foreground": "#fd0707"
         }
       },
       {
@@ -83,19 +93,6 @@
         }
       },
       {
-        "name": "others",
-        "scope": [
-          "source.python",
-          "variable.other.readwrite.python",
-          "variable.other.assignment.python",
-          "meta.function-call.arguments.python"
-        ],
-        "settings": {
-          "foreground": "#ff2e2e",
-          "fontStyle": "italic"
-        }
-      },
-      {
         "name": "Python Conditionals",
         "scope": [
           "keyword.control.conditional.python",
@@ -104,9 +101,46 @@
         "settings": {
           "foreground": "#0047c1"
         }
+      },
+      {
+        "name": "Punctuation and Operators",
+        "scope": [
+          "punctuation",
+          "punctuation.definition",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "punctuation.section",
+          "punctuation.bracket",
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#0cffe3" 
+        }
+      },
+      {
+        "name": "Numbers",
+        "scope": [
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#ff2e2e" 
+        }
+      },
+      {
+        "name": "others",
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#FFC42E",
+          "fontStyle": "italic"
+        }
       }
     ]
   },
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "right"
 }
