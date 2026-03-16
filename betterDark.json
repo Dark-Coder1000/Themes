@@ -38,14 +38,14 @@
     "contrastBorder": "#ff0c0c33" // Optional: adds a thin outline
 
   },
-  "editor.tokenColorCustomizations": {
+    "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "name": "Functions like print and input",
+        "name": "Functions",
         "scope": [
           "support.function",
           "entity.name.function",
-          "meta.function-call.generic.python"
+          "meta.function-call" 
         ],
         "settings": {
           "foreground": "#ff0000",
@@ -53,32 +53,11 @@
         }
       },
       {
-        "name": "comments",
+        "name": "Variables and Arguments",
         "scope": [
-          "comment",
-          "comment.block",
-          "comment.block.documentation",
-          "comment.line"
-        ],
-        "settings": {
-          "foreground": "#ff00e170"
-        }
-      },
-      {
-        "name": "All Variable types, Modules, and Properties",
-        "scope": [
-          "source.python",
-          "variable",
           "variable.other",
-          "variable.other.readwrite.python",
-          "variable.other.assignment.python",
-          "variable.other.object.python",
-          "meta.function-call.arguments.python",
-          "variable.parameter.function.python",
-          "variable.language.special.self.python",
-          "meta.indexed-name.python",
-          "variable.other.property.python",
-          "meta.item-access.python"
+          "variable.parameter",
+          "meta.function-call.arguments"
         ],
         "settings": {
           "foreground": "#ff3e3e",
@@ -86,9 +65,44 @@
         }
       },
       {
-        "scope": "string.quoted.double.python, string.quoted.single.python",
+        "name": "Strings",
+        "scope": "string",
         "settings": {
           "foreground": "#00ff9d"
+        }
+      },
+      {
+        "name": "Comments",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#0400ffad",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "others",
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#ff2e2e",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Python Conditionals",
+        "scope": [
+          "keyword.control.conditional.python",
+          "keyword.control.flow.python"
+        ],
+        "settings": {
+          "foreground": "#0047c1"
         }
       }
     ]
