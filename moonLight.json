@@ -38,14 +38,14 @@
     "contrastBorder": "#0cffca33" // Optional: adds a thin outline
 
   },
-  "editor.tokenColorCustomizations": {
+    "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "name": "Functions like print and input",
+        "name": "Functions",
         "scope": [
           "support.function",
           "entity.name.function",
-          "meta.function-call.generic.python"
+          "meta.function-call" 
         ],
         "settings": {
           "foreground": "#006aff",
@@ -53,11 +53,11 @@
         }
       },
       {
+        "name": "Variables and Arguments",
         "scope": [
-          "source.python",
-          "variable.other.readwrite.python",
-          "variable.other.assignment.python",
-          "meta.function-call.arguments.python"
+          "variable.other",
+          "variable.parameter",
+          "meta.function-call.arguments"
         ],
         "settings": {
           "foreground": "#b23eff",
@@ -65,9 +65,44 @@
         }
       },
       {
-        "scope": "string.quoted.double.python, string.quoted.single.python",
+        "name": "Strings",
+        "scope": "string",
         "settings": {
           "foreground": "#7107fd"
+        }
+      },
+      {
+        "name": "Comments",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#00e1ffad",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "others",
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#ff2e2e",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Python Conditionals",
+        "scope": [
+          "keyword.control.conditional.python",
+          "keyword.control.flow.python"
+        ],
+        "settings": {
+          "foreground": "#0047c1"
         }
       }
     ]
