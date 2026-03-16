@@ -1,0 +1,77 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#000000",
+    // Activity Bar (The far left icons bar)
+    "activityBar.background": "#070021",
+    "activityBar.foreground": "#a20cff",
+    "activityBar.inactiveForeground": "#070021",
+    "activityBar.border": "#0cf4ff33",
+
+    // Side Bar (The Explorer/Folders area)
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#39FF14",
+    "sideBar.border": "#0cf4ff33",
+
+    // Status Bar (The very bottom bar)
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#39FF14",
+    "statusBar.border": "#0cffdb33",
+
+    // Title Bar (The very top bar)
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#39FF14",
+
+    "editorGroupHeader.tabsBackground": "#000000",
+    "tab.activeBackground": "#000000",
+    "tab.inactiveBackground": "#000000",
+    
+        // The main box background and foreground
+    "quickInput.background": "#000000",
+    "quickInput.foreground": "#39FF14",
+    
+    // The list items inside the palette
+    "quickInputList.focusBackground": "#0cff1c33", // Glow when you highlight an item
+    "quickInputList.focusForeground": "#39FF14",   // Text color when highlighted
+    
+    // The border around the whole palette
+    "widget.border": "#39FF14",
+    "contrastBorder": "#0cff3433" // Optional: adds a thin outline
+
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Functions like print and input",
+        "scope": [
+          "support.function",
+          "entity.name.function",
+          "meta.function-call.generic.python"
+        ],
+        "settings": {
+          "foreground": "#00ff04",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "source.python",
+          "variable.other.readwrite.python",
+          "variable.other.assignment.python",
+          "meta.function-call.arguments.python"
+        ],
+        "settings": {
+          "foreground": "#128e43",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "string.quoted.double.python, string.quoted.single.python",
+        "settings": {
+          "foreground": "#07fd8e"
+        }
+      }
+    ]
+  },
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+}
