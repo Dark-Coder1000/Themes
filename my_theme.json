@@ -1,44 +1,54 @@
 {
   "workbench.colorCustomizations": {
     "editor.background": "#000000",
-    // Activity Bar (The far left icons bar)
+    "editorCursor.foreground": "#FFC42E",
+    "editor.selectionBackground": "#FFC42E33",
+    "editor.lineHighlightBackground": "#ffc42e11",
+    "terminal.foreground": "#FFC42E",
+    "terminal.background": "#000000",
+
+    // Activity Bar
     "activityBar.background": "#261b00",
     "activityBar.foreground": "#a20cff",
     "activityBar.inactiveForeground": "#4b3700",
     "activityBar.border": "#ffc42e4c",
 
-    // Side Bar (The Explorer/Folders area)
+    // Side Bar
     "sideBar.background": "#000000",
     "sideBar.foreground": "#FFC42E",
     "sideBar.border": "#ffc42e4c",
 
-    // Status Bar (The very bottom bar)
+    // Status Bar
     "statusBar.background": "#000000",
     "statusBar.foreground": "#FFC42E",
     "statusBar.border": "#ffc42e4c",
 
-    // Title Bar (The very top bar)
+    // Title Bar
     "titleBar.activeBackground": "#000000",
     "titleBar.activeForeground": "#FFC42E",
 
+    // Tabs
     "editorGroupHeader.tabsBackground": "#000000",
     "tab.activeBackground": "#000000",
     "tab.inactiveBackground": "#000000",
     
-    // The main box background and foreground
+    // Quick Input / Palette
     "quickInput.background": "#000000",
     "quickInput.foreground": "#FFC42E",
+    "quickInputList.focusBackground": "#ffc42e4c",
+    "quickInputList.focusForeground": "#FFC42E",
     
-    // The list items inside the palette
-    "quickInputList.focusBackground": "#ffc42e4c", // Glow when you highlight an item
-    "quickInputList.focusForeground": "#FFC42E",   // Text color when highlighted
-    
-    // The border around the whole palette
+    // Borders
     "widget.border": "#FFC42E",
-    "contrastBorder": "#ffc42e4c" // Optional: adds a thin outline
+    "contrastBorder": "#ffc42e4c",
 
+    // Bracket Pair Colorization (Red as requested)
+    "editorBracketHighlight.foreground1": "#010bcb",
+    "editorBracketHighlight.foreground2": "#010bcb",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#010bcb"
   },
-    "editor.tokenColorCustomizations": {
+
+  "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "name": "Functions",
@@ -83,6 +93,40 @@
         }
       },
       {
+        "name": "Python Conditionals",
+        "scope": [
+          "keyword.control.conditional.python",
+          "keyword.control.flow.python"
+        ],
+        "settings": {
+          "foreground": "#1937e3"
+        }
+      },
+      {
+        "name": "Punctuation and Operators",
+        "scope": [
+          "punctuation",
+          "punctuation.definition",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "punctuation.section",
+          "punctuation.bracket",
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#FFC42E" 
+        }
+      },
+      {
+        "name": "Numbers",
+        "scope": [
+          "constant.numeric"
+        ],
+        "settings": {
+          "foreground": "#a20cff" 
+        }
+      },
+      {
         "name": "others",
         "scope": [
           "source.python",
@@ -94,19 +138,9 @@
           "foreground": "#FFC42E",
           "fontStyle": "italic"
         }
-      },
-      {
-        "name": "Python Conditionals",
-        "scope": [
-          "keyword.control.conditional.python",
-          "keyword.control.flow.python"
-        ],
-        "settings": {
-          "foreground": "#1937e3"
-        }
       }
     ]
   },
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "right"
 }
