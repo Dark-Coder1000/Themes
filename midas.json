@@ -138,6 +138,94 @@
           "foreground": "#FFC42E",
           "fontStyle": "italic"
         }
+      },
+      {
+        "name": "Variables and Arguments",
+        "scope": [
+          "variable.other",
+          "variable.parameter",
+          "meta.function-call.arguments",
+          "variable.other.local",
+          "variable.other.property"
+        ],
+        "settings": {
+          "foreground": "#FFC42E",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Strings",
+        "scope": [
+          "string.quoted.double.c",
+          "string.quoted.single.c",
+          "string"
+        ],
+        "settings": {
+          "foreground": "#ff2eaf"
+        }
+      },
+      {
+        "name": "Comments",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#ffb7008b",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "C Conditionals and Control Flow",
+        "scope": [
+          "keyword.control.conditional.c",
+          "keyword.control.conditional.cpp",
+          "keyword.control.flow.c",
+          "keyword.control.flow.cpp",
+          "keyword.control.directive",
+          "keyword.control.import"
+        ],
+        "settings": {
+          "foreground": "#1937e3"
+        }
+      },
+      {
+        "name": "Punctuation and Operators",
+        "scope": [
+          "punctuation",
+          "punctuation.definition",
+          "punctuation.separator",
+          "punctuation.terminator",
+          "punctuation.section",
+          "punctuation.bracket",
+          "keyword.operator",
+          "keyword.operator.member",
+          "keyword.operator.comparison",
+          "keyword.operator.assignment"
+        ],
+        "settings": {
+          "foreground": "#FFC42E" 
+        }
+      },
+      {      
+        "name": "C Types (int, void, char, union, struct)",
+        "scope": [
+          "keyword.type.c",
+          "keyword.type.cpp",
+          "storage.type.c",
+          "storage.type.cpp",
+          "storage.type.built-in.c",
+          "storage.type.built-in.cpp",
+          "storage.type.primitive.c",
+          "storage.type.primitive.cpp",
+          "storage.type.void.c",
+          "storage.type.struct.c",
+          "storage.type.union.c"
+        ],
+        "settings": {
+          "foreground": "#a20cff",
+          "fontStyle": "bold"
+        }
       }
     ]
   },
